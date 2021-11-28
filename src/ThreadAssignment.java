@@ -4,7 +4,7 @@ public class ThreadAssignment {
         void count() {
         	for (int i=350;i>0;i--)
                 System.out.print(i+"\n");
-            System.out.println("FINISH !\n");
+                System.out.println("FINISH !\n");
         }
     }
 
