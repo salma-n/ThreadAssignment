@@ -30,18 +30,13 @@ public class ThreadAssignment {
         MyThread t2 = new MyThread(counter);
         
         t1.start();
-        try{
-        	t1.join();
-        }
-        catch(InterruptedException e){
-            System.out.println(e);
-        }
         t2.start();
+        
         try{
-        	t2.join();
-        }
-        catch(InterruptedException e){
-            System.out.println(e);
+            t1.join();
+            t2.join();
+        }catch (InterruptedException e){
+            e.printStackTrace();
         }
         
 
